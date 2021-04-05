@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Farming Calculator ...........</title>
+    <style>
+        body {
+            text-align: center;
+            background: linear-gradient(to top, green, white);
+            font-style: italic;
+            font-size: 36px;
+        }
+
+        button {
+            border-radius: 5px;
+            border-style: double;
+            height: 40px;
+            width: 100px;
+            background-size: cover;
+            border-width: thick;
+        }
+    </style>
+    <script>
+        function calculate() {
+            var area =
+                Number(document.getElementById("sqlength").value) *
+                Number(document.getElementById("sqlength").value);
+            documnt.getElementById("lbarea").innerHTML = area;
+            var fence =
+                Number(document.getElementById("sqlength").value) *
+                4;
+            documnt.getElementById("lbfence").innerHTML = fence;
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1><u>FARMING CALCULATOR.</u></h1>
+    <br>
+    <span><label>Please enter the length of a side of the square field ...</label>
+        <input type="number" class="ibox" id="sqlength">
+    </span>
+    <br>
+    <button id="button" onclick="calculate">Calculate.</button>
+    <br>
+    <span><label>Area of the sq. field :-</label><label id="lbarea"></label></span>
+    <br>
+    <span><label>Length of fence needed :-</label><label id="lbfence"></label></span>
+    <br>
+</body></html>
